@@ -21,6 +21,11 @@ class ViewController: UIViewController {
         caltype = -1
     }
     
+    @IBAction func allclear(_ sender: Any) {
+        display.text = "0"
+        first = 0
+        caltype = -1
+    }
     @IBAction func calculate(_ sender: UIButton) {
         caltype = sender.tag
         first = CLongLong(display.text!)
@@ -40,6 +45,7 @@ class ViewController: UIViewController {
             display.text = String(first * second)
         }
         first = 0
+        caltype = -1
     }
     
     

@@ -13,6 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -237,6 +238,19 @@
                                     <action selector="equal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="etD-sQ-Dp6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ava-eA-rtH">
+                                <rect key="frame" x="83" y="462" width="276" height="64"/>
+                                <color key="backgroundColor" red="0.90877995469999995" green="0.90877995469999995" blue="0.90877995469999995" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="276" id="7Xs-D5-jtk"/>
+                                    <constraint firstAttribute="height" constant="64" id="kg5-JL-IWG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="AC"/>
+                                <connections>
+                                    <action selector="allclear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xv2-G6-ipS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99404761904761907" green="0.98809523809523814" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
@@ -267,9 +281,11 @@
                             <constraint firstItem="huw-UG-qxn" firstAttribute="baseline" secondItem="OKE-ba-CuF" secondAttribute="baseline" id="bzV-FV-b2k"/>
                             <constraint firstItem="5Wc-pK-dtL" firstAttribute="baseline" secondItem="1Qu-rK-Rry" secondAttribute="baseline" id="dGF-DF-mgj"/>
                             <constraint firstItem="e2G-tH-oxd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="eEU-qe-RRV"/>
+                            <constraint firstItem="ava-eA-rtH" firstAttribute="leading" secondItem="Qrw-cz-q3z" secondAttribute="leading" id="gky-kU-VE6"/>
                             <constraint firstItem="OKE-ba-CuF" firstAttribute="baseline" secondItem="raP-c9-HKs" secondAttribute="baseline" id="gmt-ay-xCG"/>
                             <constraint firstItem="cmb-Wb-tKp" firstAttribute="baseline" secondItem="1Qu-rK-Rry" secondAttribute="baseline" id="igJ-AX-qtn"/>
                             <constraint firstItem="uA4-7Z-eM0" firstAttribute="leading" secondItem="cmb-Wb-tKp" secondAttribute="trailing" constant="8.5" id="jfc-zz-WwC"/>
+                            <constraint firstItem="ava-eA-rtH" firstAttribute="top" secondItem="Qrw-cz-q3z" secondAttribute="bottom" constant="8" id="l5U-BX-fny"/>
                             <constraint firstItem="N95-ig-PIc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="65" id="qff-gt-sVs"/>
                             <constraint firstItem="rKK-dK-fcI" firstAttribute="baseline" secondItem="vbu-YA-f6u" secondAttribute="baseline" id="rw1-mC-6Kn"/>
                             <constraint firstItem="vbu-YA-f6u" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="uBW-te-0tj"/>
@@ -282,7 +298,6 @@
                         <outlet property="display" destination="N95-ig-PIc" id="0M5-p6-eL6"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-212" y="12.143928035982009"/>
         </scene>
