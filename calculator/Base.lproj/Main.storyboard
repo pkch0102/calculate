@@ -73,7 +73,7 @@
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
-                                                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X7h-n9-8Zs"/>
+                                                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1t7-7P-veB"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
