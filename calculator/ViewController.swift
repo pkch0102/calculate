@@ -10,7 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var display: UILabel!
     var first: CLongLong!
     var caltype: Int!
@@ -32,6 +31,12 @@ class ViewController: UIViewController {
         display.text = "0"
     }
     
+    @IBAction func plusminus(_ sender: Any) {
+        var tmp: CLongLong = CLongLong(display.text!)!
+        tmp *= -1
+        display.text = String(tmp)
+    }
+    
     @IBAction func equal(_ sender: Any) {
         let second: CLongLong = CLongLong(display.text!)!
         
@@ -43,6 +48,8 @@ class ViewController: UIViewController {
             display.text = String(first / second)
         }else if(caltype == 3){
             display.text = String(first * second)
+        }else if(caltype == 4){
+            display.text = String(first & second)
         }
         first = 0
         caltype = -1
@@ -68,7 +75,7 @@ class ViewController: UIViewController {
     
     @IBAction func buttonClicked(_ sender: UIButton) {
         let cnt: Int = (display.text?.characters.count)!
-        if(cnt > 12) {
+        if(cnt > 6) {
             return
         }
         
